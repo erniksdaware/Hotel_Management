@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .navbar {
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: gray;
+        }
+        .navbar-brand:hover {
+        color: white;
+        text-decoration:underline;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav-link {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        #hero {
+        background-image: url('images/taj.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 100px;
+        text-align: center;
+        margin-top: 40px;
+        }
+        #hero {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/taj.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 100px;
+        text-align: center;
+        margin-top: 40px;
+        }
+        #about-us {
+            padding: 40px;
+        }
+        #rooms {
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="Home.html">Hotel Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact_US.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About_Us.html">About</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="Menu_Card.html">Menu Card</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" class="text-center">
+        <h1>Welcome to Taj Hotel..!!💎</h1>
+        <h4>... Experience the best hospitality in town ...</h4>
+        <a href="Booking.html" class="btn btn-primary">Book Now</a>
+    </section>
+    <section class="text-center" id="about-us">
+        <h2>About Us</h2>
+        <h6>Taj Hotel is a luxurious hotel that offers the best amenities and services to its guests.</h6>
+    </section>
+    <section id="rooms">
+        <h2>Our Rooms→</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Deluxe Room.jpg" alt="Room 1">
+                    <h5>Deluxe Room</h5>
+                    <p>Starting from RS.1000 per night</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Suite Room.avif" alt="Room 2">
+                    <h5>Suite Room</h5>
+                    <p>Starting from Rs.2000 per night</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Executive Room.jpg" alt="Room 3">
+                    <h5>Executive Room</h5>
+                    <p>Starting from Rs.3000 per night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <footer class="bg-dark text-white text-center p-4">
+    <p>&copy; 2023 Taj Hotel All rights reserved.</p>
+    <p>Contact Us:+91 8010250590 | info@tajhotel77.com</p>
+    <p>Quick Links :
+        <a href="Home.html" class="text-white mx-2">Home</a> |
+        <a href="Contact_Us.html" class="text-white mx-2">Contact Us</a> |
+        <a href="Booking.html" class="text-white mx-2">Booking</a> |
+        <a href="Rooms.html" class="text-white mx-2">Rooms</a> |
+        <a href="About_Us.html" class="text-white mx-2">About Us</a> |
+        <a href="Menu_Card.html" class="text-white mx-2">Menu Card</a>
+    </p>
+    <p>Follow us on social media:</p>
+        <a href="https://instagram.com/" target="_blank" class="text-white mx-2" aria-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://facebook.com/" target="_blank" class="text-white mx-2" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="text-white mx-2" aria-label="Twitter">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width:24px;vertical-align:middle;">
+</footer>
+
+
+

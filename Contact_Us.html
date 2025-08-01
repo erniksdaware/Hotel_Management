@@ -1,0 +1,128 @@
+:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .navbar {
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: gray;
+        }
+        .navbar-brand:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav-link {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        #contact-us {
+            padding: 40px;
+        }
+        footer {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="Home.html">Hotel Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Booking.html">Booking</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="ContactUS.html">Contact Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About_Us.html">About Us</a>
+                </li> <li class="nav-item">
+                    <a class="nav-link" href="Menu_Card.html">Menu Card</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="contact-us">
+        <h2 class="text-center">Get in Touch</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button><br><br>
+                    <a href="Booking.html" class="btn btn-primary">Book Now</a>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <h5>Bandstand, Bandra West, Mumbai, Maharashtra 400050</h5>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-phone fa-2x"></i>
+                <h5>+91 8010250590</h5>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-envelope fa-2x"></i>
+                <h5>info@tajhotel77.com</h5>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.2055321723037!2d72.8309463029736!3d18.922294564849597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c06fffffff%3A0xc0290485a4d73f57!2sThe%20Taj%20Mahal%20Palace%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1753611465642!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2023 Taj Hotel All rights reserved.</p>
+        <p>Contact Us:+91 8010250590 | info@tajhotel77.com</p>
+        <p>Quick Links : 
+            <a href="Home.html" class="text-white mx-2">Home</a> | 
+            <a href="Contact_Us.html" class="text-white mx-2">Contact Us</a> |
+            <a href="Booking.html" class="text-white mx-2">Booking</a> |
+            <a href="Rooms.html" class="text-white mx-2">Rooms</a> |
+            <a href="About_Us.html" class="text-white mx-2">About Us</a> |
+            <a href="Menu_Card.html" class="text-white mx-2">Menu Card</a>
+        </p>
+        <p>Follow us on social media:</p>
+        <a href="https://instagram.com/" target="_blank" class="text-white mx-2" aria-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://facebook.com/" target="_blank" class="text-white mx-2" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="text-white mx-2" aria-label="Twitter">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width:24px;vertical-align:middle;">
+    </footer>

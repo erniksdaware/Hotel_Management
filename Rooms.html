@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .navbar {
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: gray;
+        }
+        .navbar-brand:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav-link {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        #rooms {
+            padding: 40px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: #fff;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .card h5 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 1rem;
+            color: #2c3e50;
+        }
+        .card p {
+            color: #2980b9;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .card ul {
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .card ul li {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0.25rem;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+            border: none;
+            border-radius: 2rem;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0056b3 60%, #00aaff 100%);
+        }
+        #rooms h1 {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #007bff;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        body {
+            background: linear-gradient(120deg, #f8fafc 60%, #e3f0ff 100%);
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="Home.html">Hotel Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Rooms.html">Rooms <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact_US.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About_Us.html">About Us</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="Menu_Card.html">Menu Card</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="rooms">
+        <h1 class="text-center">!!...Our Rooms...!!</h1>
+        <div class="row">
+            <!-- Room 1 Deluxe Room1    -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Deluxe Room.jpg" alt="Room 1">
+                    <h5>Deluxe Room</h5>
+                    <p>Starting from RS.1000 per night</p>
+                    <ul>
+                        <li>King-size bed</li>
+                        <br>
+                        <li>Free Wi-Fi</li>
+                        <br>
+                        <li>Flat-screen TV</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 2 suite room-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Suite Room.avif" alt="Room 2">
+                    <h5>Suite Room</h5>
+                    <p>Starting from Rs.2000 per night</p><br>
+                    <ul>
+                        <li>King-size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Private balcony</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 3 Executive room-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Executive Room.jpg" alt="Room 3">
+                    <h5>Executive Room</h5>
+                    <p>Starting from Rs.3000 per night</p>
+                    <ul>
+                        <li>King-size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Private balcony</li>
+                        <li>Complimentary breakfast</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room4 Luxary room -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Luxary Room.webp" alt="room 4">
+                    <h5>Luxary Room</h5>
+                    <p>Starting from Rs.4000 per night</p>
+                    <br><br>
+                    <ul>
+                        <li>King-size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Privacy balcony</li>
+                        <li>Complimentary breakfast</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!---room 5 family room-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Family Room.jpg" alt="Room 5">
+                    <h5>Family Room</h5>
+                    <p>Starting from Rs.3500 per night</p><br>
+                    <ul>
+                        <li>Two Queen-Size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-Screen TV</li>
+                        <li>Privacy balcony</li>
+                        <li>Complimentary breakfast</li>
+                        <li>Kids play area</li>
+                    </ul> 
+                    <button class="btn btn-primary">Book Now</button> 
+                </div>
+            </div>
+            <!-- Room 6 persenditial suite room-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Persendital suite.avif" alt="Room 6">
+                    <h5>Persendital Suite Room</h5>
+                    <p>Starting from Rs.5000 per night</p>
+                    <ul>
+                        <li>King-size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Private balcony</li>
+                        <li>Complimentary breakfast</li>
+                        <li>Personal butler service</li>
+                        <li>Jacuzzi</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 7: Single Room -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Single Room.jpg" alt="Single Room"><br>
+                    <h5>Single Room</h5>
+                    <p>Starting from Rs.800 per night</p>
+                    <ul>
+                        <li>Single bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Work desk</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 8: Superior Room -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Superior Room.jpg" alt="Superior Room">
+                    <h5>Superior Room</h5>
+                    <p>Starting from Rs.2500 per night</p>
+                    <ul>
+                        <li>Queen-size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Mini bar</li>
+                        <li>City view</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 9: Twin Room -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Twin Room.webp" alt="Twin Room">
+                    <h5>Twin Room</h5>
+                    <p>Starting from Rs.1800 per night</p>
+                    <ul>
+                        <li>Two single beds</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Work desk</li>
+                        <li>Air conditioning</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 10: Studio Room -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Studio Room.webp" alt="Studio Room"><br>
+                    <h5>Studio Room</h5><br>
+                    <p>Starting from Rs.2200 per night</p><br>
+                    <ul>
+                        <li>Queen-size bed</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Kitchenette</li>
+                        <li>Work desk</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 11: Premium Room -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Premium Room.png" alt="Premium Room">
+                    <h5>Premium Room</h5>
+                    <p>Starting from Rs.6000 per night</p>
+                    <ul>
+                        <li>King-size bed with luxury linens</li>
+                        <li>Free high-speed Wi-Fi</li>
+                        <li>55 inches Smart TV</li>
+                        <li>Private balcony with city view</li>
+                        <li>Complimentary breakfast & dinner</li>
+                        <li>Mini bar</li>
+                        <li>Personal butler service</li>
+                        <li>Jacuzzi bath</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            <!-- Room 12: Hollywood Twin Room -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images/Hollywood Twin Room.jpg" alt="Hollywood Twin Room"><br>
+                    <h5>Hollywood Twin Room</h5><br>
+                    <p>Starting from Rs.2000 per night</p><br>
+                    <ul>
+                        <li>Two single beds joined together</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Flat-screen TV</li>
+                        <li>Work desk</li>
+                        <li>Air conditioning</li>
+                    </ul>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-white text-center p-4">
+    <p>&copy; 2023 Taj Hotel All rights reserved.</p>
+    <p>Contact Us:+91 8010250590 | info@tajhotel77.com</p>
+    <p>Quick Links :
+        <a href="Home.html" class="text-white mx-2">Home</a> |
+        <a href="Contact_Us.html" class="text-white mx-2">Contact Us</a> |
+        <a href="Booking.html" class="text-white mx-2">Booking</a> |
+        <a href="Rooms.html" class="text-white mx-2">Rooms</a> |
+        <a href="About_Us.html" class="text-white mx-2">About_Us</a> |
+        <a href="Menu_Card.html" class="text-white mx-2">Menu Card</a>
+    </p>
+    <p>Follow us on social media:</p>
+        <a href="https://instagram.com/" target="_blank" class="text-white mx-2" aria-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://facebook.com/" target="_blank" class="text-white mx-2" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="text-white mx-2" aria-label="Twitter">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width:24px;vertical-align:middle;">
+</footer>
+</body>
+</html>
+
+
+

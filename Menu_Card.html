@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card - Hotel Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 60%, #e3f0ff 100%);
+        }
+        .menu-section {
+            background: linear-gradient(135deg, #e3f0ff 0%, #f8fafc 100%);
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px rgba(0,123,255,0.12), 0 1.5px 8px rgba(41,128,185,0.08);
+            padding: 3rem 2.5rem;
+            margin: 2.5rem auto;
+            max-width: 950px;
+            border: 2px solid #007bff;
+            position: relative;
+            overflow: hidden;
+        }
+        .menu-section::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #007bff33 60%, transparent 100%);
+            z-index: 0;
+        }
+        .menu-section::after {
+            content: "";
+            position: absolute;
+            bottom: -60px;
+            left: -60px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #2980b933 60%, transparent 100%);
+            z-index: 0;
+        }
+        .menu-section > * {
+            position: relative;
+            z-index: 1;
+        }
+        .menu-section h1 {
+            color: #007bff;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .menu-category {
+            margin-bottom: 2rem;
+        }
+        .menu-category h3 {
+            color: #2980b9;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .menu-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .menu-list li {
+            font-size: 1.15rem;
+            color: #222;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e3f0ff;
+            padding: 0.75rem 0;
+            background: linear-gradient(90deg, #f8fafc 70%, #e3f0ff 100%);
+            border-radius: 0.3rem;
+            transition: box-shadow 0.2s, background 0.2s;
+        }
+        .menu-list li:hover {
+            background: linear-gradient(90deg, #e3f0ff 60%, #f8fafc 100%);
+            box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+        }
+        .menu-list .price {
+            color: #007bff;
+            font-weight: 600;
+        }
+        .navbar {
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: gray;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-brand:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .nav-link {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        footer {
+            background: #222;
+            border-top: 4px solid #007bff;
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="Home.html">Hotel Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact_US.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Menu_Card.html">Menu Card <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu-section">
+        <h1>Our Menu Card</h1>
+        <div class="menu-category">
+            <h3>Breakfast</h3>
+            <ul class="menu-list">
+                <li>Idli Sambar <span class="price">Rs.660/-</span></li>
+                <li>Masala Dosa <span class="price">Rs.630/-</span></li>
+                <li>Omelette & Toast <span class="price">Rs.400/-</span></li>
+                <li>Poha <span class="price">Rs.450/-</span></li>
+                <li>Upma <span class="price">Rs.500/-</span></li>
+                <li>Continental Breakfast <span class="price">Rs.580/-</span></li>
+                <li>South Indian Platter <span class="price">Rs.460/-</span></li>
+                <li>Pancakes with Maple Syrup <span class="price">Rs.850/-</span></li>
+                <li>Fresh Fruit Bowl <span class="price">Rs.900/-</span></li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Lunch</h3>
+            <ul class="menu-list">
+                <li>Paneer Butter Masala with Naan <span class="price">Rs.3000/-</span></li>
+                <li>Chicken Biryani <span class="price">Rs.4580/-</span></li>
+                <li>Veg Thali [Unlimited] <span class="price">Rs.5000/-</span></li>
+                <li>Caesar Salad <span class="price">Rs.3800/-</span></li>
+                <li>Dal Tadka with Rice <span class="price">Rs.4800/-</span></li>
+                <li>Fish Curry with Steamed Rice <span class="price">Rs.7000/-</span></li>
+                <li>Mixed Vegetable Curry <span class="price">Rs.7200/-</span></li>
+                <li>Butter Naan <span class="price">Rs.300/-</span></li>
+                <li>Greek Salad <span class="price">Rs.6700/-</span></li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Dinner</h3>
+            <ul class="menu-list">
+                <li>Grilled Fish with Lemon Butter <span class="price">Rs.9000/-</span></li>
+                <li>Paneer Tikka Masala <span class="price">Rs.8000/-</span></li>
+                <li>Chicken Tandoori <span class="price">Rs.9999/-</span></li>
+                <li>Vegetable Pulao <span class="price">Rs.8880/-</span></li>
+                <li>Garlic Naan <span class="price">Rs.800/-</span></li>
+                <li>Dal Makhani with Rice <span class="price">Rs.5080/-</span></li>
+                <li>Butter Chicken <span class="price">Rs.12000/-</span></li>
+                <li>Mixed Veg Curry <span class="price">Rs.9800/-</span></li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Beverages</h3>
+            <ul class="menu-list">
+                <li>Fresh Lime Soda <span class="price">Rs.580/-</span></li>
+                <li>Masala Chai <span class="price">Rs.700/-</span></li>
+                <li>Cappuccino <span class="price">Rs.890/-</span></li>
+                <li>Fresh Juice <span class="price">Rs.1000/-</span></li>
+                <li>Cold Coffee <span class="price">Rs.1350/-</span></li>
+                <li>Green Tea <span class="price">Rs.780/-</span></li>
+                <li>Mineral Water <span class="price">Rs.170/-</span></li>
+                <li>Soft Drinks <span class="price">Rs.900/-</span></li>
+                <li>Hot Chocolate <span class="price">Rs.999/-</span></li>
+            </ul>
+        </div
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <ul class="menu-list">
+                <li>Chocolate Brownie <span class="price">Rs.1200/-</span></li>
+                <li>Gulab Jamun <span class="price">Rs.800/-</span></li>
+                <li>Ice Cream Sundae <span class="price">Rs.2700/-</span></li>
+                <li>Fruit Custard <span class="price">Rs.1800/-</span></li>
+                <li>Rasmalai <span class="price">Rs.1700/-</span></li>
+                <li>Cheesecake <span class="price">Rs.3800/-</span></li>
+                <li>Apple Pie <span class="price">Rs.1820/-</span></li>
+                <li>Chocolate Mousse <span class="price">Rs.1600/-</span></li>
+                <li>Fresh Fruit Tart <span class="price">Rs.1230/-</span></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Hotel Management. All rights reserved.</p>
+        <p>Contact Us: +91 8010250590 | info@hotelmanagement.com</p>
+        <p>Quick Links :
+            <a href="Home.html" class="text-white mx-2">Home</a> |
+            <a href="Rooms.html" class="text-white mx-2">Rooms</a> |
+            <a href="Booking.html" class="text-white mx-2">Booking</a> |
+            <a href="Contact_US.html" class="text-white mx-2">Contact Us</a> |
+            <a href="About.html" class="text-white mx-2">About</a> |
+            <a href="Menu_Card.html" class="text-white mx-2">Menu Card</a>
+        </p>
+        <p>Follow us on social media:</p>
+        <a href="https://instagram.com/" target="_blank" class="text-white mx-2" aria-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://facebook.com/" target="_blank" class="text-white mx-2" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="text-white mx-2" aria-label="Twitter">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width:24px;vertical-align:middle;">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
