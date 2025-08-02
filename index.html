@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management - Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 60%, #e3f0ff 100%);
+        }
+        .hero-section {
+            background: linear-gradient(120deg, #007bff 60%, #00c6ff 100%);
+            color: #fff;
+            padding: 4rem 2rem 3rem 2rem;
+            text-align: center;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        .hero-btns .btn {
+            margin: 0.5rem;
+            font-size: 1.1rem;
+            border-radius: 2rem;
+            padding: 0.6rem 2rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .features-section {
+            max-width: 1100px;
+            margin: 3rem auto 2rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 2rem 1.5rem;
+            flex: 1 1 250px;
+            min-width: 250px;
+            max-width: 320px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        .feature-card h5 {
+            font-weight: 700;
+            color: #2980b9;
+            margin-bottom: 0.7rem;
+        }
+        .feature-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+        .navbar {
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: gray;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-brand:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .nav-link {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        footer {
+            background: #222;
+            border-top: 4px solid #007bff;
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="index.html">Hotel Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Booking.html">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Menu_Card.html">Menu Card</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact_US.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <h1>Welcome to Hotel Management</h1>
+        <p>
+            Experience luxury, comfort, and world-class hospitality at our hotel. Book your stay, explore our rooms, enjoy delicious cuisine, and let us make your visit memorable.
+        </p>
+        <div class="hero-btns">
+            <a href="Rooms.html" class="btn btn-primary">View Rooms</a>
+            <a href="Booking.html" class="btn btn-success">Book Now</a>
+            <a href="Menu_Card.html" class="btn btn-info">Menu Card</a>
+            <a href="Contact_US.html" class="btn btn-warning">Contact Us</a>
+            <a href="About_Us.html" class="btn btn-secondary">About Us</a>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="feature-card">
+            <i class="fas fa-bed"></i>
+            <h5>Rooms & Suites</h5>
+            <p>Choose from a variety of elegant rooms and suites designed for your comfort and relaxation.</p>
+            <a href="Rooms.html" class="btn btn-outline-primary btn-sm mt-2">Explore Rooms</a>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-calendar-check"></i>
+            <h5>Easy Booking</h5>
+            <p>Book your stay in just a few clicks with our simple and secure online booking system.</p>
+            <a href="Booking.html" class="btn btn-outline-primary btn-sm mt-2">Book Now</a>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-utensils"></i>
+            <h5>Menu Card</h5>
+            <p>Enjoy a wide range of delicious cuisines and beverages from our exclusive menu.</p>
+            <a href="Menu_Card.html" class="btn btn-outline-primary btn-sm mt-2">View Menu</a>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-phone-alt"></i>
+            <h5>Contact Us</h5>
+            <p>Have questions or need help? Reach out to our 24/7 support team for assistance.</p>
+            <a href="Contact_US.html" class="btn btn-outline-primary btn-sm mt-2">Contact</a>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-info-circle"></i>
+            <h5>About Us</h5>
+            <p>Learn more about our hotel, our values, and our commitment to your satisfaction.</p>
+            <a href="About.html" class="btn btn-outline-primary btn-sm mt-2">Read More</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Hotel Management. All rights reserved.</p>
+        <p>Contact Us: +91 8010250590 | info@hotelmanagement.com</p>
+        <p>Quick Links :
+            <a href="index.html" class="text-white mx-2">Home</a> |
+            <a href="Rooms.html" class="text-white mx-2">Rooms</a> |
+            <a href="Booking.html" class="text-white mx-2">Booking</a> |
+            <a href="Menu_Card.html" class="text-white mx-2">Menu Card</a> |
+            <a href="Contact_US.html" class="text-white mx-2">Contact Us</a> |
+            <a href="About.html" class="text-white mx-2">About</a>
+        </p>
+        <p>Follow us on social media:</p>
+        <a href="https://instagram.com/" target="_blank" class="text-white mx-2" aria-label="Instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://facebook.com/" target="_blank" class="text-white mx-2" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width:24px;vertical-align:middle;">
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="text-white mx-2" aria-label="Twitter">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" style="width:24px;vertical-align:middle;">
+    </footer>
+    </body>
+    </html>
+    
